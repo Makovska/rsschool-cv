@@ -1,0 +1,86 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	line-height: 1.2;
+}
+
+.wrapper {
+	min-height: 100%;
+	width: 720px;
+	margin: 0 auto;
+}
+
+/* ------------------------------ */
+
+
+section {
+	margin-bottom: 30px;
+}
+.header__title {
+	font-size: 25px;
+	font-weight: bold;
+	color: #4b0082;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 30px 0;
+}
+
+.header__contacts span {
+	font-weight: bold;
+	color: #4b0082;
+	font-style: italic;
+}
+
+.main__container:hover .cv-info__title,
+.header__contacts-item:hover span {
+	color: #b781e9;
+}
+
+.cv-info__title {
+	font-weight: bold;
+		color: #4b0082;
+		text-transform: uppercase;
+}
