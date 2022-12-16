@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CV Makovska</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<nav class="menu">
+			<ul class="menu__items">
+				<li class="menu__item"><a class="menu__link" href="#contacts">Contacts</a></li>
+				<li class="menu__item"><a class="menu__link" href="#tech">Tech skills</a></li>
+				<li class="menu__item"><a class="menu__link" href="#soft">Soft skills</a></li>
+				<li class="menu__item"><a class="menu__link" href="#work">Work Experience</a></li>
+				<li class="menu__item"><a class="menu__link" href="#education">Education</a></li>
+				<li class="menu__item"><a class="menu__link" href="#languages">Languages</a></li>
+				<li class="menu__item"><a class="menu__link" href="#projects">Projects</a></li>
+			</ul>
+		</nav>
+		<div class="content-wrapper">
+			<aside class="sidebar">
+				<div class="foto"><img src="img/foto.jpg" alt="My foto" title="Hi! You look at me."></div>
+				<address class="sidebar__contacts cv-info" id="contacts">
+					<div class="cv-info__title">Contacts</div>
+					<ul>
+						<li class="cv-info__text"><span>Phone:</span>+380951613890, +420739515190</li>
+						<li class="cv-info__text"><span>Email:</span>makovskalv@ukr.net</li>
+						<li class="cv-info__text"><span>Location:</span>Ukraine, during the war - Ostrava, Czech Republic</li>
+						<li class="cv-info__text"><span>GitHub:</span><a href="https://github.com/Makovska" target="_blank">Makovska</a></li>
+						<li class="cv-info__text"><span>Discord:</span>Luda (@makovska)</li>
+					</ul>
+				</address>
+				<section class="sidebar__tech-skills cv-info" id="tech">
+					<h2 class="cv-info__title">Tech Skills</h2>
+					<ul class="cv-info__text">
+						<li>HTML</li>
+						<li>CSS (SCSS)</li>
+						<li>JavaScript</li>
+						<li>Git, GitHub</li>
+						<li>BEM</li>
+						<li>software testing</li>
+					</ul>
+				</section>
+				<section class="sidebar__soft-skills cv-info" id="soft">
+					<h2 class="cv-info__title">Soft Skills</h2>
+					<ul class="cv-info__text">
+						<li>Responsible</li>
+						<li>Attentive</li>
+						<li>Friendly</li>
+					</ul>
+				</section>
+			</aside>
+			<div class="right-part">
+				<header class="header">
+						<h1 class="header__title">Liudmyla Makovska</h1>
+						<strong class="header__text">Front-End developer</strong>
+				</header>
+				<main class="main">
+					<section class="main__about-me cv-info">
+						<h2 class="cv-info__title">About me</h2>
+						<div class="cv-info__text">
+							<p>Past: 13 years of experience in the financial sector (economy, insurance, stock market,
+							financial monitoring).</p>
+								<p> Present: Education and experience in IT are loading.</p>
+								<p>Future: Front-End developer</p>
+							</div>
+					</section>
+					<section class="main__work-experience cv-info" id="work">
+						<h2 class="cv-info__title">Work Experience</h2>
+						<ul class="cv-info__text experience-list">
+							<li class="experience-list__item">
+								<p>03.09.2007 - now (from 01.07.2016 - maternity leave)
+								</p>
+								<h3 class="experience-list__company">LLC "first stock brokerage company"</h3>
+								<p>Last position since 17.06.2011 to 30.06.2016 – Head of the department of depository activities</p>
+							</li>
+							<li class="experience-list__item">
+								<p>01.06.2007 – 31.07.2007</p>
+								<h3 class="experience-list__company">LLC "Family Bank"</h3>
+								<p>Specialist of the department of depository services</p>
+							</li>
+							<li class="experience-list__item">
+								<p>08.07.2003 – 31.05.2007</p>
+								<h3 class="experience-list__company">OJSC "Insurance Company Oradon "</h3>
+								<p>Last position since 01.06.2006 – Head of the economic analysis and payroll department; person responsible for financial monitoring; the chief accountant of the trade union</p>
+							</li>
+						</ul>
+					</section>
+					<section class="main__education cv-info" id="education">
+						<h2 class="cv-info__title">Education</h2>
+						<ul class="cv-info__text education-list">
+							<li class="education-list__item">Donetsk State University of Management, qualification of a master in management of organizations.</li>
+							<li class="education-list__item">Courses on depository activities, primary financial monitoring, and accounting.</li>
+							<li class="education-list__item">Courses in HTML, CSS (SCSS), JavaScript basics, software testing basics.</li>
+						</ul>
+					</section>
+					<section class="main__languages cv-info" id="languages">
+						<h2 class="cv-info__title">Languages</h2>
+						<div class="cv-info__text">
+							<ul>
+								<li>Ukrainian, russian - native speaker</li>
+								<li>English – intermediate</li>
+								<li>Czech - basic</li>
+							</ul>
+						</div>
+					</section>
+					<section class="main__projects cv-info" id="projects">
+						<h2 class="cv-info__title">Projects</h2>
+						<div class="cv-info__text">
+							<ul>
+								<li><a href="https://makovska.github.io/rsschool-cv/">https://makovska.github.io/rsschool-cv/</a></li>
+								<li>To be continued ...</li>
+							</ul>
+						</div>
+					</section>
+					<section class="main__code-example code">
+						<h2 class="code__title">Code Example</h2>
+						<pre>
+							<code class="code__text">
+	const autoSlider = () =&gt; {
+		if (slidesArea.addEventListener != 'mouseover') {
+			console.log(slidesArea.addEventListener);
+			const autoSlider = setInterval(nextSlide, 2000);
+			}
+		}
+	autoSlider();
+							</code>
+						</pre>
+					</section>
+				</main>
+			</div>
+		</div>
+		<footer class="footer">
+			<a class="github-link" href="https://github.com/Makovska" target="_blank">My GitHub</a>
+			<p>2022</p>
+			<a class="rsschool-link" href="https://rs.school/js/" target="_blank"></a>
+		</footer>
+	</div>
+</body>
+</html>
