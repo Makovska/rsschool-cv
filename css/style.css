@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
-html {
+:root {
 	--red: #CC1559;
 	--green: #397249;
 	--blue: #354E71;
@@ -21,7 +21,6 @@ a,
 a:visited,
 a:hover {
 	text-decoration: none;
-	
 }
 
 h1,
@@ -51,8 +50,6 @@ html {
 body {
 	line-height: 1.3;
 	min-height: 100vh;
-	margin: 0;
-		padding: 0;
 }
 
 .wrapper {
@@ -63,6 +60,11 @@ body {
 }
 
 /* Menu */
+.menu {
+	position: sticky;
+	top: 0;
+	z-index: 20;
+}
 .menu__items {
 	display: flex;
 	gap: 30px;
@@ -113,6 +115,8 @@ body {
 	transform: translate(30px, 20px);
 	z-index: 2;
 	position: relative;
+	border: var(--green) 1px solid;
+	box-shadow: var(--red) 35px 45px 0 -20px;
 }
 .foto img {
 	object-fit: cover;
@@ -122,17 +126,7 @@ body {
 	transition: 0.3s;
 }
 .foto:hover img {
-	transform: scale(1.3);
-}
-.sidebar::before {
-	content: '';
-	display: inline-block;
-	background-color: var(--red);
-	width: 100%;
-	height: 400px;
-	position: absolute;
-	transform: translate(40px, 50px);
-	z-index: 1;
+	transform: scale(1.2);
 }
 
 /* Contacts */
@@ -206,7 +200,7 @@ body {
 	background-color: var(--green);
 }
 .cv-info__text {
-	padding: 0 30px 0;
+	padding: 0 35px 0;
 }
 .sidebar__contacts a {
 	color: #ffffff;
@@ -223,13 +217,14 @@ body {
 	text-transform: capitalize;
 }
 .main__code-example {
-	transform: translate(-120px, 0px);
+	transform: translate(-150px, 0px);
 }
 .code {
 	width: 100%;
-	background-color: var(--red);
+	background-color: #ffffff;
 	padding: 35px 50px 0 5px;
 	position: relative;
+	box-shadow: var(--red) 25px -15px;
 }
 .code__title {
 	text-align: right;
@@ -237,20 +232,6 @@ body {
 }
 .code__text {
 	font-size: 16px;
-}
-
-.code::before {
-	content: '';
-	display: inline-block;
-	background-color: #ffffff;
-	width: 100%;
-	height: 100%;
-	bottom: 115px;
-	right: 40px;
-	position: absolute; 
-	transform: translate(10px, 130px);
-	position: absolute;
-	z-index: -1;
 }
 
 .footer {
